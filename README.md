@@ -20,5 +20,11 @@ done
 
 Check system readiness
 ```
+virt-host-validate
+```
 
+Manage VMs without Root privileges
+```
+# sermod -aG libvirt $(whoami)
+# newgrp libvirt
 ```
